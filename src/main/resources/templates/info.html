@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+    <link rel="shortcut icon" th:href="@{/fav.ico}">
+
+</head>
+<body class="d-flex flex-column h-100">
+
+<div th:replace="~{fragments/header :: header}"></div>
+
+<main role="main" class="flex-shrink-0">
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <p>В нашей школе вы можете изучить множество иностранных языков с опытными преподавателями.
+                Занятия в нашей школе обычно направлены, например, на коммуникативную компетентность в иностранном языке.
+                Изучение языка в нашей школе поможет улучшить произношение, знание лексики и грамматики и многое другое.
+                Учащиеся нашей школы могут сильно различаться по возрасту, уровню образования, опыту работы.
+                Однако у них есть возможность выбрать конкретный курс в соответствии со своим уровнем владения языком.
+                Согласно Общеевропейской системе отсчета по языкам
+                существует шесть языковых уровней, которые определяют уровень владения языком учащимися на
+                основе их навыков говорения, письма и чтения. После беседы с преподавателем, он определит ваш уровень
+                и вы будете определены на нужные занятия</p>
+        </div>
+    </div>
+</main>
+
+<div th:replace="~{fragments/footer :: footer}"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
